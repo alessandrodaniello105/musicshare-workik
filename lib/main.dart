@@ -291,9 +291,13 @@ class _MusicShareHomePageState extends State<MusicShareHomePage> {
                               width: 24,
                               height: 24),
                         ),
-                        label: const Text('Share to WhatsApp'),
+                        label: const Text('Share to WhatsApp', style: TextStyle(color: Colors.white)),
                         onPressed: _shareWhatsApp,
-                        style: ElevatedButton.styleFrom(backgroundColor: Colors.green[700]),
+                        style: ElevatedButton.styleFrom(
+                          backgroundColor: Colors.green[700],
+                          foregroundColor: Colors.white,
+                          textStyle: const TextStyle(color: Colors.white),
+                        ),
                       ),
                     ),
                     const SizedBox(width: 16),
@@ -307,9 +311,13 @@ class _MusicShareHomePageState extends State<MusicShareHomePage> {
                           errorBuilder: (context, error, stackTrace) =>
                               const Icon(Icons.telegram, color: Colors.white),
                         ),
-                        label: const Text('Share to Telegram'),
+                        label: const Text('Share to Telegram', style: TextStyle(color: Colors.white)),
                         onPressed: _shareTelegram,
-                        style: ElevatedButton.styleFrom(backgroundColor: Colors.blue[600]),
+                        style: ElevatedButton.styleFrom(
+                          backgroundColor: Colors.blue[600],
+                          foregroundColor: Colors.white,
+                          textStyle: const TextStyle(color: Colors.white),
+                        ),
                       ),
                     )
 
