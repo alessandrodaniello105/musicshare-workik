@@ -1,0 +1,21 @@
+name: music_share_app
+description: A Flutter app to get current playing song, search on YouTube, and share link via WhatsApp or Telegram.
+publish_to: none
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.17.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  http: ^1.4.0
+  permission_handler: ^12.0.0+1
+  url_launcher: ^6.1.7
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
